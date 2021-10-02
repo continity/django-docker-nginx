@@ -8,18 +8,18 @@ upstream django {
 # configuration of the server
 server {
     listen 8080;
-#    server_name *.continity.io;
+#   server_name *.continity.io;
 
     # max upload size
     client_max_body_size 100M;   # adjust to taste
 
     location /static/ {
-        alias /var/www/django/public/static;
+        alias /var/www/django/static;
     }
 
     # Django media
     location /media/ {
-        alias /var/www/django/public/media;
+        alias /var/www/django/media;
     }
 
     location / {
