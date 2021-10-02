@@ -1,4 +1,4 @@
-FROM nginx:1.21.1-alpine
+FROM nginx:latest
 
 LABEL maintainer="contact@continity.io"
 
