@@ -13,7 +13,7 @@ RUN apt-get update --fix-missing && \
     apt-get clean && \
     chmod 775 /start.sh
 
-EXPOSE 80
+EXPOSE 8080
 WORKDIR /var/www
 
 ENTRYPOINT ["sh", "/start.sh"]
